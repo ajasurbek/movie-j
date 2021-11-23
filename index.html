@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Cinemagic</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="cinemagic__heading">Cinemagic</h1>
+ 
+    <main>
+      <section class="cinemagic__search">
+  
+        <form class="js-search-form" action="https://echo.htmlacademy.ru" method="GET" autocomplete="off">
+         
+            <input class="js-search-form__title-input  cinemagic__input" type="search" name="title" placeholder="Avengers"
+              aria-label="Title">
+        
+            <input class="js-search-form__rating-input input__rating" type="number" step="any" name="min_rating"
+              placeholder="7.5" value="5" aria-label="Minimum rating">
+         
+            <select class="js-search-form__genre-select cinemagic__input" name="genre" aria-label="Genre">
+              <option value="All" selected>All</option>
+            </select>
+  
+            <select class="js-search-form__sort-select  cinemagic__input" name="sort" aria-label="Sorting">
+              <option value="rating_desc" selected>Rating (high to low)</option>
+              <option value="rating_asc">Rating (low to high)</option>
+              <option value="az">A-Z</option>
+              <option value="za">Z-A</option>
+              <option value="year_desc">Year (new to old)</option>
+              <option value="year_asc">Year (old to new)</option>
+            </select>
+  
+          <button class="cinemagic__btn"  type="submit">Search</button>
+        </form>
+      </section>
+        
+  
+      <div>
+        <div>
+
+          <section>
+  
+            <ul class="search-results">
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+  
+    <section class="movie-info-modal modal fade" id="movie-info-modal" tabindex="-1" aria-labelledby="movie-info-title" aria-hidden="true">
+     
+    </section>
+  
+
+
+  <!-- TEMPLATES -->
+  <template id="search-result-template">
+    <li class="search-results__item movie">
+      <div class="card">
+        
+        <img class="movie__poster card-img-top" src="https://picsum.photos/id/870/300" alt="" width="300" height="200">
+
+        <div>
+          <h3 class="movie__title"></h3>
+       <div class="cinemagic__rating-wrapper">
+        <div class="cinemagic__wrapper">
+          <img class="cinemagic__year-img" src="img/film-icon-18-48.png" alt="Calendar" width="20" height="20">
+          <span class="movie__year"></span>
+        </div>
+
+        <div class="star__wrapper">
+          <img class="star__img" src="img/star.svg" alt="Star" width="25" height="25">
+          <span class="movie__rating"></span>
+        </div>
+
+       </div>
+          <div class="cinemagic__link-wrapper">
+            <a class="movie__trailer-link" href="" target="_blank">Watch trailer</a>
+          </div>
+        </div>
+      
+      </div>
+    </li>
+  </template>
+
+
+ </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/normalized-movies.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
