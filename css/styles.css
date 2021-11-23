@@ -1,0 +1,255 @@
+body {
+  background-color: #252f35;
+  color: #ffffff;
+}
+/* h1 h2 h3 h4 h5 h6 p span div a {
+  margin: 0!important;
+  padding: 0!important;
+} */
+.card {
+  border: none!important;
+  background-color: #252f35!important;
+}
+main {
+  display: flex;
+}
+.container {
+  max-width: 1460px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cinemagic__heading {
+  text-align: center;
+  padding: 30px 0;
+}
+.cinemagic__search {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.js-search-form {
+  display: flex;
+  flex-direction: column;
+}
+.cinemagic__heading-results {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
+  font-size: 35px;
+}
+
+
+.cinemagic__rating-wrapper {
+  display: flex;
+}
+.movie__poster {
+  width: 300px!important;
+  height: 200px!important;
+  object-fit: cover!important;
+}
+
+.cinemagic__wrapper {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+.cinemagic__year-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.star__img {
+  margin-right: 3px;
+}
+.cinemagic__link-wrapper {
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+}
+.star__wrapper {
+  display: flex;
+  align-items: center;
+}
+.movie__trailer-link {
+  text-decoration: none;
+  padding-right: 10px;
+  color: white;
+}
+.movie__trailer-link:hover {
+  color: white;
+}
+.js-movie-bookmark {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #0c6db3;
+  box-shadow: 0px 4px 25px rgba(10, 102, 168, 0.5);
+} 
+.movie__title {
+  padding-left: 5px;
+  padding-top: 10px;
+  font-size: 22px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  width: 285px; 
+  white-space: nowrap;
+  margin: 0;
+}
+.search-results {
+  max-width: 1150px;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.search-results__item {
+  width: 300px;
+  border: none!important;
+  margin: 20px 0;
+}
+
+/* =================== */
+.cinemagic__input {
+  background: #3F4B52;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 6px;
+  margin-bottom: 5px;
+  width: 250px;
+}
+.cinemagic__btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 0;
+  color: #ffffff;
+  background-color: #0c6db3;
+  box-shadow: 0px 4px 25px rgba(10, 102, 168, 0.5);
+}
+::placeholder {
+   color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #ffffff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #ffffff;
+}
+
+.input__rating {
+  background: #3F4B52;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 6px;
+  margin-bottom: 5px;
+  width: 238px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .search-results__item {
+    width: 280px;
+    border: none!important;
+    margin: 18px 0;
+  }
+  .movie__title {
+    padding-top: 8px;
+    width: 265px; 
+  }
+  .movie__poster {
+    width: 280px!important;
+    height: 180px!important;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .input__rating {
+    width: 187px;
+  }
+  .cinemagic__input {
+    width: 200px;
+  }
+  .cinemagic__search {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 870px) {
+main {
+  flex-direction: column;
+}
+.cinemagic__btn {
+  width: 300px;
+}
+.cinemagic__search {
+  margin: 0;
+margin-right: auto;
+margin-left: auto;
+}
+.input__rating {
+  width: 287px;
+}
+.cinemagic__input {
+  width: 300px;
+}
+}
+@media only screen and (max-width: 620px) {
+  .search-results__item {
+    width: 200px;
+    border: none!important;
+    margin: 18px 0;
+  }
+  .movie__title {
+    padding-top: 8px;
+    width: 185px; 
+  }
+  .movie__poster {
+    width: 200px!important;
+    height: 120px!important;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .search-results__item {
+    width: 150px;
+    border: none!important;
+    margin: 15px 0;
+  }
+  .movie__title {
+    padding-top: 5px;
+    width: 140px; 
+  font-size: 17px;
+  }
+  .movie__poster {
+    width: 150px!important;
+    height: 110px!important;
+  }
+  .cinemagic__heading {
+    padding: 18px 0;
+  }
+}
+@media only screen and (max-width: 345px) {
+  .search-results__item {
+    width: 140px;
+    border: none!important;
+    margin: 15px 0;
+  }
+  .movie__title {
+    padding-top: 5px;
+    width: 130px; 
+  font-size: 16px;
+  }
+  .movie__poster {
+    width: 140px!important;
+    height: 110px!important;
+  }
+}
